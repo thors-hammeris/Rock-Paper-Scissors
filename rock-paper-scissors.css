@@ -7,7 +7,7 @@ body{
 font-size: 80px;
 
 }.rock-button {
-  background-color: black;
+  background-color: blue;
   border-style: solid;
   border-color: white;
   border-radius: 75px;
@@ -20,7 +20,7 @@ border-radius: 50px ;
   width: 100px;
 
 }.paper-button {
-  background-color: black;
+  background-color: blue;
   border-style: solid;
   border-color: white;
   border-radius: 75px;
@@ -33,7 +33,7 @@ border-radius: 50px ;
   width: 100px;
 
 }.scissors-button {
-  background-color: black;
+  background-color: bue;
   border-style: solid;
   border-color: white;
   border-radius: 75px;
