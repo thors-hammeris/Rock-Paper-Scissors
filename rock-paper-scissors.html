@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" href="rock-paper-scissors.css">
     <title>Rock Paper Scissors</title>
-    <link rel="icon" href="rock-emoji.png">
   </head>
   <body>
     <p class="header">Rock Paper Scissors</p>
@@ -31,6 +30,10 @@
       updateScoreElement();
     ">Reset Score</button>
 
+    <button class="auto-play" onclick="
+    autoPlay();
+    ">Auto Play</button>
+
     <script>
       let score = JSON.parse(localStorage.getItem('score')) || {
         wins: 0,
@@ -39,6 +42,30 @@
       };
 
       updateScoreElement();
+
+      let isAutoPlaying = false;
+
+      let intervalId = undefined;
+
+      function autoPlay () {
+
+        if (isAutoPlaying === false) {
+
+        intervalId = setInterval (function () {
+  const playerMove = pickComputerMove()
+  playGame(playerMove);
+
+} 
+,1000)
+
+isAutoPlaying = true
+      }else {
+        clearInterval (intervalId)
+        isAutoPlaying = false
+      }
+    }
+
+
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
