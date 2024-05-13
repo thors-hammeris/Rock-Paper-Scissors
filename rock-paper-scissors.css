@@ -33,12 +33,13 @@ border-radius: 50px ;
   width: 100px;
 
 }.scissors-button {
-  background-color: bue;
+  background-color: blue;
   border-style: solid;
   border-color: white;
   border-radius: 75px;
   margin-left: 30px;
   padding: 15px;
+  
 
 }.scissors-button-img {
   background-color: black;
@@ -53,6 +54,4 @@ border-radius: 50px ;
 }.auto-play {
   font-size: 30px;
   background-color: white;
-  border: none;
-
-}
+  border: none;}
